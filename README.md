@@ -29,3 +29,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 # Installing in heroku (added by sd 11/4/19):
 
 https://itnext.io/how-to-deploy-angular-application-to-heroku-1d56e09c5147
+
+# FHIR client
+
+http://docs.smarthealthit.org/client-js/
