@@ -23,7 +23,8 @@
               "src/favicon.ico",
               "src/assets",
 	      "src/launch.html",
-	      "src/redirect.html"
+	      "src/redirect.html",
+	      "src/app.js"
             ],
             "styles": [
               "src/styles.css"
@@ -90,7 +91,8 @@
               "src/favicon.ico",
               "src/assets",
 	      "src/launch.html",
-	      "src/redirect.html"
+	      "src/redirect.html",
+	      "src/app.js"
             ],
             "styles": [
               "src/styles.css"
