@@ -5,11 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Static Template</title>
-        <link rel="stylesheet" href="../style.css">
         <script src="https://combinatronics.com/smart-on-fhir/client-js/master/dist/build/fhir-client.js"></script>
         <script src="./app.js"></script>
     </head>
     <body>
+        <h1>Served from Redirect.html</h1>
         <div class="cell top-left">
             <h4>Current Patient</h4>
             <pre id="patient"></pre>
