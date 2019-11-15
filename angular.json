@@ -23,13 +23,18 @@
               "src/favicon.ico",
               "src/assets",
 	      "src/launch.html",
+	      "src/launch-cerner.html",
 	      "src/redirect.html",
 	      "src/app.js"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"              
+            ]
           },
           "configurations": {
             "production": {
@@ -91,6 +96,7 @@
               "src/favicon.ico",
               "src/assets",
 	      "src/launch.html",
+	      "src/launch-cerner.html",
 	      "src/redirect.html",
 	      "src/app.js"
             ],
