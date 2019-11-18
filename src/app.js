@@ -13,6 +13,12 @@ function App(client) {
   this.client = client;
 }
 
+App.prototype.fetchLaunchInfo = function() {
+  var render = createRenderer("launch");
+  render("Loading...");
+  return this.client.JSON.read().then(render, render);
+}
+
 App.prototype.fetchCurrentPatient = function() {
   var render = createRenderer("patient");
   render("Loading...");
@@ -41,7 +47,8 @@ App.prototype.renderContext = function() {
   return Promise.all([
     this.fetchCurrentPatient(),
     this.fetchCurrentUser(),
-    this.fetchCurrentEncounter()
+    this.fetchCurrentEncounter(),
+    this.fetchLaunchInfo()
   ]);
 };
 

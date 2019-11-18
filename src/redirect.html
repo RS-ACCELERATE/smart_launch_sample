@@ -10,21 +10,25 @@
     </head>
     <body>
         <h1>Served from Redirect.html</h1>
-        <div class="cell top-left">
+        <div>
             <h4>Current Patient</h4>
             <pre id="patient"></pre>
         </div>
-        <div class="cell top-center">
+        <div>
             <h4>Current User</h4>
             <pre id="user"></pre>
         </div>
-        <div class="cell top-right">
+        <div>
             <h4>Current Encounter</h4>
             <pre id="encounter"></pre>
         </div>
-        <div class="cell bottom">
+        <div>
             <h4>Main Output</h4>
             <pre id="output">Loading...</pre>
+        </div>
+        <div>
+            <h4>Launch Context</h4>
+            <pre id="launch">Loading...</pre>
         </div>
         <script type="text/javascript">
             FHIR.oauth2.ready().then(function(client) {
