@@ -42,7 +42,7 @@
                 // document.getElementById("debug").innerHTML+='launch info: ' + client.FHIR.oauth2
                 document.getElementById("debug").innerHTML+='access token: ' + client.getPath('state.tokenResponse.access_token') + '<br>';
                 document.getElementById("debug").innerHTML+='id token: ' + JSON.stringify(client.getIdToken()) + '<br>';
-                document.getElementById("debug").innerHTML+='tokenRespose: ' + JSON.stringify(client.tokenResponse) + '<br>';
+                document.getElementById("debug").innerHTML+='tokenRespose: ' + JSON.stringify(FHIR.oauth2.state.tokenResponse) + '<br>';
                 
                 console.log('id token: ' + JSON.stringify(client.getIdToken()));
 
