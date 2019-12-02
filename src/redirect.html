@@ -30,9 +30,17 @@
             <h4>Launch Context</h4>
             <pre id="launch">Loading...</pre>
         </div>
+        <div>
+            <h4>Debug</h4>
+            <pre id="debug"></pre>
+        </div>
         <script type="text/javascript">
-            
+            document.getElementById("debug").innerHTML+='querystring: ' + location.search + '<br>';
+
+            console.log('querystring: ' + location.search);
             FHIR.oauth2.ready().then(function(client) {
+                // document.getElementById("debug").innerHTML+='launch info: ' + client.FHIR.oauth2
+                document.getElementById("debug").innerHTML+='access token: ' + client.getPath('state.tokenResponse.access_token');
                 var app = new App(client);
                                 
                 App.prototype.setLabel("output", "Conformance Statement");
