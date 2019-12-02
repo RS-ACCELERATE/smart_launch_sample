@@ -41,6 +41,8 @@
             FHIR.oauth2.ready().then(function(client) {
                 // document.getElementById("debug").innerHTML+='launch info: ' + client.FHIR.oauth2
                 document.getElementById("debug").innerHTML+='access token: ' + client.getPath('state.tokenResponse.access_token');
+                console.log(client.getIdToken());
+                
                 var app = new App(client);
                                 
                 App.prototype.setLabel("output", "Conformance Statement");
