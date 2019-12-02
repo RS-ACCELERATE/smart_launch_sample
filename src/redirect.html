@@ -36,13 +36,13 @@
         </div>
         <script type="text/javascript">
             document.getElementById("debug").innerHTML+='querystring: ' + location.search + '<br>';
+            document.getElementById("debug").innerHTML+='tokenRespose: ' + JSON.stringify(FHIR.oauth2.state.tokenResponse) + '<br>';
 
             console.log('querystring: ' + location.search);
             FHIR.oauth2.ready().then(function(client) {
                 // document.getElementById("debug").innerHTML+='launch info: ' + client.FHIR.oauth2
                 document.getElementById("debug").innerHTML+='access token: ' + client.getPath('state.tokenResponse.access_token') + '<br>';
                 document.getElementById("debug").innerHTML+='id token: ' + JSON.stringify(client.getIdToken()) + '<br>';
-                document.getElementById("debug").innerHTML+='tokenRespose: ' + JSON.stringify(FHIR.oauth2.state.tokenResponse) + '<br>';
                 
                 console.log('id token: ' + JSON.stringify(client.getIdToken()));
 
