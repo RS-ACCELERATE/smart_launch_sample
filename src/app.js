@@ -16,7 +16,8 @@ function App(client) {
 App.prototype.fetchLaunchInfo = function() {
   var render = createRenderer("launch");
   render("Loading...");
-  return this.client.JSON.read().then(render, render);
+  return this.client.all.read().then(render,render);
+  // return this.client.JSON.read().then(render, render);
 }
 
 App.prototype.fetchCurrentPatient = function() {

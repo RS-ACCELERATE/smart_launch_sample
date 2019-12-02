@@ -31,8 +31,10 @@
             <pre id="launch">Loading...</pre>
         </div>
         <script type="text/javascript">
+            
             FHIR.oauth2.ready().then(function(client) {
                 var app = new App(client);
+                                
                 App.prototype.setLabel("output", "Conformance Statement");
                 app.renderContext();
                 app.request("metadata");
